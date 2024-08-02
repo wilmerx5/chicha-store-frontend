@@ -1,9 +1,10 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
 
+<script setup>
+
+import { useDrinksStore } from '@/stores/drinks';
+const drinksStore =useDrinksStore()
+
+
+</script>
 <template>
-  <main>
-    <TheWelcome />
-  </main>
 </template>
