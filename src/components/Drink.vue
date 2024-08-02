@@ -1,12 +1,20 @@
 <script setup>
 import { formatMoney } from '@/utils';
 
+import { useCartStore } from '@/stores/cart';
+
+const cartStore = useCartStore()
 const props=defineProps({
     drink:{
         type:Object,
         required:true
     }
 })
+const addToCart=()=>{
+cartStore.addToCart(props.drink)
+console.log(cartStore.cart)
+}
+
 </script>
 <template>
 
@@ -33,7 +41,10 @@ const props=defineProps({
             class="text-center my-2 font-extrabold"
             >{{ formatMoney(drink.price)}}</p>
 
-            <button class="
+            <button 
+            @click="addToCart"
+            class="
+            
             hover:bg-yellow-600
             bg-yellow-500 w-full py-2 mx-auto text-white font-extrabold rounded uppercase text-1xl">
                 Add To Cart

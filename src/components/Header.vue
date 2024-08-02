@@ -1,8 +1,7 @@
 <script setup>
 import { computed } from 'vue';
-import { RouterLink } from 'vue-router';
-
-import { useRoute } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router';
+import Cart from './Cart/Cart.vue';
 import Welcome from './Welcome.vue';
 
 const route = useRoute()
@@ -34,6 +33,9 @@ const isHomePage = computed(() => {
                 <RouterLink class="uppercase  font-bold" :to="{ name: 'drinks' }" active-class="!text-violet-800">
                     Drinks
                 </RouterLink>
+                <Cart>
+                    
+                </Cart>
             </div>
         </div>
 
@@ -48,7 +50,7 @@ const isHomePage = computed(() => {
 
 <style scoped>
 .header {
-    background-image: url("/public/img/bg-chicha.png");
+    background-image: url("img/bg-chicha.png");
     background-size: cover;
 
 
