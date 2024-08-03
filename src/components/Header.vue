@@ -15,7 +15,7 @@ const isHomePage = computed(() => {
 
 <template>
 
-    <header :class="{ header: isHomePage }" class="bg-yellow-400 ">
+    <header :class="{ header: isHomePage,fix:!isHomePage }" class="bg-yellow-400 position-fixed  w-full z-50">
 
         <div class="p-5 flex justify-between pt-10 align-center">
             <div>
@@ -54,6 +54,9 @@ const isHomePage = computed(() => {
     background-size: cover;
 
 
+}
+.fix{
+    
 }
 
 a {

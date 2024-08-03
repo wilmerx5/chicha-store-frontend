@@ -12,7 +12,6 @@ const props=defineProps({
 })
 const addToCart=()=>{
 cartStore.addToCart(props.drink)
-console.log(cartStore.cart)
 }
 
 </script>
