@@ -1,4 +1,4 @@
 <template>
 
-    <h2>about</h2>
+    <h2 class="mt-header py-5">about</h2>
 </template>
