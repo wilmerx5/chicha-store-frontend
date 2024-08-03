@@ -20,6 +20,8 @@ export default {
       },maxHeight: {
         '10vh': '10vh',
         '20vh': '20vh',
+        '25vh': '25vh',
+
         '30vh': '30vh',
         '40vh': '40vh',
         '50vh': '50vh',
@@ -31,6 +33,9 @@ export default {
       },
       margin:{
         'header':'115px'
+      },
+      colors:{
+        'brown':'#6F360C'
       }
     
     },
