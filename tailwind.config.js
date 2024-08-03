@@ -32,7 +32,8 @@ export default {
         '100vh': '100vh',
       },
       margin:{
-        'header':'115px'
+        'header':'115px',
+        '50vw':'50vw'
       },
       colors:{
         'brown':'#6F360C'

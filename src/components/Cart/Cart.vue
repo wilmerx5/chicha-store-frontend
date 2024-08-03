@@ -35,7 +35,6 @@ const cartStore = useCartStore()
 
                         </thead>
 
-                        <hr>
                         <tbody>
 
                             <ItemCart v-for="item in cartStore.cart" :item="item">
